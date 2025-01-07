@@ -17,5 +17,14 @@ int main()
         cin >> arr[i];
     }
     int i0 = 0, i1 = 1;
+    for (int i = 2; i < n; i++)
+    {
+        if (arr[i0] <= arr[i])
+        {
+            int temp = i0;
+            i0 = i;
+            i1 = temp;
+        }
+    }
     return 0;
 }
