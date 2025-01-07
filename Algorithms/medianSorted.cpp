@@ -34,5 +34,6 @@ int main()
             i1++;
         }
     }
+    double median;
     return 0;
 }
