@@ -47,5 +47,6 @@ int main()
     {
         median = (a0[i0]+a1[i1])/2.0;
     }
+    cout << "Median of the two arrays: " << median << endl;
     return 0;
 }
