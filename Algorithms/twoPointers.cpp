@@ -10,5 +10,6 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> n;
     }
+    int arr[n];
     return 0;
 }
