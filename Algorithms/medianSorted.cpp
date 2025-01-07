@@ -2,6 +2,8 @@
 using namespace std;
 int main()
 {
-    //code;
+    int n;
+    cout << "Enter the size of an array: ";
+    cin >> n;
     return 0;
 }
