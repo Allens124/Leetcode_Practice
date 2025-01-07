@@ -30,5 +30,7 @@ int main()
             i1 = i;
         }
     }
+    cout << "Largest element of the array: " << arr[i0] << endl;
+    cout << "Second largest element of the array: " << arr[i1] << endl;
     return 0;
 }
