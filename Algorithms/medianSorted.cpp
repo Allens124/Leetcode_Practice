@@ -10,22 +10,22 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> n;
     }
-    int a1[n];
+    int a0[n];
     cout << "Enter the values of the first array: ";
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a0[i];
+    }
+    int a1[n];
+    cout << "Enter the values of the second array: ";
     for (int i = 0; i < n; i++)
     {
         cin >> a1[i];
     }
-    int a2[n];
-    cout << "Enter the values of the second array: ";
-    for (int i = 0; i < n; i++)
-    {
-        cin >> a2[i];
-    }
     int i0 = 0, i1 = 0;
     for (int i = 0; i < n; i++)
     {
-        if (a1[i0+1] < a2[i1+1])
+        if (a0[i0+1] < a1[i1+1])
         {
             i0++;
         }
@@ -37,15 +37,15 @@ int main()
     double median;
     if (i0 > i1)
     {
-        median = (a1[i0-1]+a1[i0])/2.0;
+        median = (a0[i0-1]+a0[i0])/2.0;
     }
     else if (i0 < i1)
     {
-        median = (a2[i1-1]+a2[i1])/2.0;
+        median = (a1[i1-1]+a1[i1])/2.0;
     }
     else
     {
-        median = (a1[i0]+a2[i1])/2.0;
+        median = (a0[i0]+a1[i1])/2.0;
     }
     return 0;
 }
