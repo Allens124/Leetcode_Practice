@@ -25,6 +25,10 @@ int main()
             i0 = i;
             i1 = temp;
         }
+        if (arr[i1] <= arr[i] && i0 != i)
+        {
+            i1 = i;
+        }
     }
     return 0;
 }
