@@ -22,5 +22,6 @@ int main()
     {
         cin >> a2[i];
     }
+    int i0 = 0, i1 = 0;
     return 0;
 }
