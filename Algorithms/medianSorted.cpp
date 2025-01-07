@@ -10,5 +10,6 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> n;
     }
+    int a1[n], a2[n];
     return 0;
 }
