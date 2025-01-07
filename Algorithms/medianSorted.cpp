@@ -25,7 +25,7 @@ int main()
     int i0 = 0, i1 = 0;
     for (int i = 0; i < n; i++)
     {
-        if (a0[i0+1] < a1[i1+1])
+        if (a0[i0] < a1[i1])
         {
             i0++;
         }
@@ -35,18 +35,7 @@ int main()
         }
     }
     double median;
-    if (i0 > i1)
-    {
-        median = (a0[i0-1]+a0[i0])/2.0;
-    }
-    else if (i0 < i1)
-    {
-        median = (a1[i1-1]+a1[i1])/2.0;
-    }
-    else
-    {
-        median = (a0[i0]+a1[i1])/2.0;
-    }
+    median = (a0[i0]+a1[i1])/2.0;
     cout << "Median of the two arrays: " << median << endl;
     return 0;
 }
