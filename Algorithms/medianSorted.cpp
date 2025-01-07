@@ -35,5 +35,17 @@ int main()
         }
     }
     double median;
+    if (i0 > i1)
+    {
+        median = (a1[i0-1]+a1[i0])/2.0;
+    }
+    else if (i0 < i1)
+    {
+        median = (a2[i1-1]+a2[i1])/2.0;
+    }
+    else
+    {
+        median = (a1[i0]+a2[i1])/2.0;
+    }
     return 0;
 }
