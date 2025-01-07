@@ -10,6 +10,17 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> n;
     }
-    int a1[n], a2[n];
+    int a1[n];
+    cout << "Enter the values of the first array: ";
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a1[i];
+    }
+    int a2[n];
+    cout << "Enter the values of the second array: ";
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a2[i];
+    }
     return 0;
 }
