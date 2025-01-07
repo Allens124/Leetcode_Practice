@@ -23,5 +23,16 @@ int main()
         cin >> a2[i];
     }
     int i0 = 0, i1 = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if (a1[i0+1] < a2[i1+1])
+        {
+            i0++;
+        }
+        else
+        {
+            i1++;
+        }
+    }
     return 0;
 }
