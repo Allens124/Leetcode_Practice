@@ -23,7 +23,7 @@ int main()
         cin >> a1[i];
     }
     int i0 = 0, i1 = 0;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n-1; i++)
     {
         if (a0[i0] < a1[i1])
         {
