@@ -25,5 +25,7 @@ void bubbleSort(int arr[], int size)
 int main()
 {
     int size;
+    cout << "Enter the size of an array: ";
+    cin >> size;
     return 0;
 }
