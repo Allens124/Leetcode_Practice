@@ -44,5 +44,6 @@ int main()
         cout << arr[i];
     }
     cout << endl;
+    bubbleSort(arr, size);
     return 0;
 }
