@@ -32,5 +32,6 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> size;
     }
+    int arr[size];
     return 0;
 }
