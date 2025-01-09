@@ -3,6 +3,7 @@ using namespace std;
 
 void bubbleSort(int arr[], int size)
 {
+    int round = 0;
     bool swap = true;
     while (swap)
     {
