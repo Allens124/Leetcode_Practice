@@ -18,6 +18,7 @@ void bubbleSort(int arr[], int size)
                 swap = true;
             }
         }
+        round++;
     }
 }
 
