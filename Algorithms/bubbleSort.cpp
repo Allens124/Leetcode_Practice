@@ -27,5 +27,10 @@ int main()
     int size;
     cout << "Enter the size of an array: ";
     cin >> size;
+    while (size < 1)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> size;
+    }
     return 0;
 }
