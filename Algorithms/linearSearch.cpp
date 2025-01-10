@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int linearSearch(int n, int target)
+int linearSearch(int size, int target)
 {
     
 }
