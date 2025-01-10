@@ -1,7 +1,10 @@
 #include <iostream>
 using namespace std;
 
-
+int linearSearch(int n, int target)
+{
+    
+}
 
 int main()
 {
