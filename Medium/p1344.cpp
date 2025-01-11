@@ -11,6 +11,8 @@ double angleClock(int hour, int minutes)
 
 int main()
 {
-    //code;
+    cout << angleClock(12, 30) << endl;
+    cout << angleClock(3, 30) << endl;
+    cout << angleClock(3, 15) << endl;
     return 0;
 }
