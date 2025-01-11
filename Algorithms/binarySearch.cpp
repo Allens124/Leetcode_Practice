@@ -19,6 +19,10 @@ int binarySearch(int arr[], int low, int high, int target)
     {
         binarySearch(arr, middle, high, target);
     }
+    if (arr[middle] > target)
+    {
+        binarySearch(arr, low, middle, target);
+    }
 }
 
 int main()
