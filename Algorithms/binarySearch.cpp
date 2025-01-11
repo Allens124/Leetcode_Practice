@@ -23,6 +23,7 @@ int binarySearch(int arr[], int low, int high, int target)
     {
         binarySearch(arr, low, middle, target);
     }
+    return middle;
 }
 
 int main()
