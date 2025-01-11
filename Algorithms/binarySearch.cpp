@@ -28,6 +28,9 @@ int binarySearch(int arr[], int low, int high, int target)
 
 int main()
 {
-    //code;
+    int arr[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    cout << binarySearch(arr, 0, 10, 5) << endl;
+    cout << binarySearch(arr, 0, 10, 1) << endl;
+    cout << binarySearch(arr, 0, 10, 100) << endl;
     return 0;
 }
