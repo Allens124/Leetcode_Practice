@@ -6,7 +6,8 @@ double angleClock(int hour, int minutes)
 {
     double hourDegree = (hour%12+minutes/60.0)*30;
     double minuteDegree = minutes*6.0;
-    return abs(hourDegree-minuteDegree);
+    double angle = abs(hourDegree-minuteDegree);
+    return angle > 180 ? 360-angle : angle;
 }
 
 int main()
