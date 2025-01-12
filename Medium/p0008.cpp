@@ -3,7 +3,29 @@ using namespace std;
 
 int myAtoi(string s)
 {
-
+    int result = 0, sign = 1;
+    while (s[0] == ' ')
+    {
+        s = s.substr(1);
+    }
+    if (s[0] == '+')
+    {
+        s = s.substr(1);
+    }
+    else if (s[0] == '-')
+    {
+        sign = -1;
+        s = s.substr(1);
+    }
+    for (int i = 0; i < s.length(); i++)
+    {
+        if (!(s[i] >= '0' && s[i] <= '9'))
+        {
+            break;
+        }
+        result = 10*result+(s[i]-'0');
+    }
+    return sign*result;
 }
 
 int main()
