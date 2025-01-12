@@ -4,8 +4,8 @@ using namespace std;
 
 double angleClock(int hour, int minutes)
 {
-    double hourHand = hour < 6 ? (hour+minutes/60.0)*30 : ((12-hour)+minutes/60.0)*30;
-    double minuteHand = minutes < 30 ? minutes*6 : (60-minutes)*6;
+    double hourHand = 
+    double minuteHand = 
     return abs(hourHand-minuteHand);
 }
 
