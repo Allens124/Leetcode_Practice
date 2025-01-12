@@ -4,8 +4,8 @@ using namespace std;
 
 double angleClock(int hour, int minutes)
 {
-    double hourDegree; 
-    double minuteDegree;
+    double hourDegree = (hour%12+minutes/60.0)*30;
+    double minuteDegree = minutes*6.0;
     return abs(hourDegree-minuteDegree);
 }
 
