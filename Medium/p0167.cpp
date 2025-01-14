@@ -20,6 +20,8 @@ vector <int> twoSum(vector <int> numbers, int target)
             break;
         }
     }
+    vector <int> result = {i1, i2};
+    return result;
 }
 
 int main()
