@@ -20,7 +20,9 @@ vector <int> twoSum(vector <int> numbers, int target)
             break;
         }
     }
-    vector <int> result = {i1, i2};
+    vector <int> result;
+    result.push_back(i1);
+    result.push_back(i2);
     return result;
 }
 
