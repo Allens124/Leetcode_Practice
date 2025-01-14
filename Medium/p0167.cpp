@@ -28,6 +28,15 @@ vector <int> twoSum(vector <int> numbers, int target)
 
 int main()
 {
-    //code;
+    vector <int> v1;
+    v1.push_back(2);
+    v1.push_back(7);
+    v1.push_back(11);
+    v1.push_back(15);
+    vector <int> result = twoSum(v1, 9);
+    for (int i : result)
+    {
+        cout << i << endl;
+    }
     return 0;
 }
