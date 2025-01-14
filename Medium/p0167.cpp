@@ -4,7 +4,7 @@ using namespace std;
 
 vector <int> twoSum(vector <int> numbers, int target)
 {
-    int p1
+    int p1 = 0, p2 = numbers.size()-1;
 }
 
 int main()
