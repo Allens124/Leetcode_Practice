@@ -2,9 +2,9 @@
 #include <vector>
 using namespace std;
 
-vector <int> twoSum(int numbers[], int target)
+vector <int> twoSum(vector <int> numbers, int target)
 {
-    
+    int p1
 }
 
 int main()
