@@ -3,7 +3,11 @@ using namespace std;
 
 int maxProduct(int nums[], int size)
 {
-    int prod = nums[0], maxProd = nums[0];
+    int tempProd = nums[0], maxProd = nums[0];
+    for (int i = 0; i < size-1; i++)
+    {
+
+    }
 }
 
 int main()
