@@ -12,14 +12,16 @@ int maxProduct(int nums[], int size)
         }
         else if (tempProd*nums[i+1] < tempProd && i < size-2)
         {
-            if (tempProd*nums[i+1]*nums[i+2])
+            if (tempProd*nums[i+1]*nums[i+2] > tempProd)
             {
-                tempProd *= nums[i+1];
+                tempProd *= nums[i+1]*nums[i+2];
+                i++;
             }
         }
         if (maxProd < tempProd)
         {
             maxProd = tempProd;
+            tempProd = nums[i+1];
         }
     }
     return maxProd;
