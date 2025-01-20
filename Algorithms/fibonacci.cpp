@@ -20,7 +20,7 @@ int main()
 {
     for (int i = 0; i < 35; i++)
     {
-        cout << i << " " << fibonacci(i) << endl;
+        cout << "f(" << i << ") = " << fibonacci(i) << endl;
     }
     return 0;
 }
