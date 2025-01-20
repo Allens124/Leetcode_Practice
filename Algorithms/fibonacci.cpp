@@ -18,6 +18,9 @@ int fibonacci(int n)
 
 int main()
 {
-    //code;
+    for (int i = 0; i < 35; i++)
+    {
+        cout << i << " " << fibonacci(i) << endl;
+    }
     return 0;
 }
