@@ -3,7 +3,12 @@ using namespace std;
 
 int fibonacci(int n)
 {
-    static int memo[100];
+    static int memo[35];
+    if (memo[n] < 2)
+    {
+        memo[n] = n;
+        return memo[n];
+    }
 }
 
 int main()
