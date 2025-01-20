@@ -9,6 +9,11 @@ int fibonacci(int n)
         memo[n] = n;
         return memo[n];
     }
+    if (memo[n] == 0)
+    {
+        memo[n] = fibonacci(n-1)+fibonacci(n-2);
+    }
+    return memo[n];
 }
 
 int main()
