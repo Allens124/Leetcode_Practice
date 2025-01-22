@@ -13,6 +13,7 @@ int factorial(int n)
     {
         memo[n] = n*memo[n-1];
     }
+    return memo[n];
 }
 
 int main()
