@@ -9,6 +9,10 @@ int factorial(int n)
         memo[n] = n;
         return memo[n];
     }
+    if (memo[n] == 0)
+    {
+        memo[n] = n*memo[n-1];
+    }
 }
 
 int main()
