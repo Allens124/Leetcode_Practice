@@ -21,7 +21,7 @@ int main()
     int n = 1;
     for (int i = 1; i < 100; i++)
     {
-        cout << n*i << endl;
+        cout << i << ": " << n*i << endl;
         n *= i;
     }
     return 0;
