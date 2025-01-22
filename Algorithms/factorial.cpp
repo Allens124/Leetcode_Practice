@@ -4,6 +4,11 @@ using namespace std;
 int factorial(int n)
 {
     static int memo[35];
+    if (n < 1)
+    {
+        memo[n] = n;
+        return memo[n];
+    }
 }
 
 int main()
