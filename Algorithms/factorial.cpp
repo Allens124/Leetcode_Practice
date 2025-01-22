@@ -18,6 +18,9 @@ int factorial(int n)
 
 int main()
 {
-    
+    for (int i = 0; i < 13; i++)
+    {
+        cout << "f(" << i << ") = " << factorial(i) << endl;
+    }
     return 0;
 }
