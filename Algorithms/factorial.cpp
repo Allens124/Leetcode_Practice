@@ -3,7 +3,7 @@ using namespace std;
 
 int factorial(int n)
 {
-    static int memo[12];
+    static int memo[13];
     if (n < 2)
     {
         memo[n] = 1;
