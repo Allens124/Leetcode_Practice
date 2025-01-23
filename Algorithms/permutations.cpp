@@ -13,6 +13,11 @@ bool ok(string str, int c)
     return true;
 }
 
+void permutations(string permArray[], string str, int c)
+{
+    
+}
+
 int main()
 {
     //code;
