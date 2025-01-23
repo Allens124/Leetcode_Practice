@@ -32,6 +32,6 @@ void permutations(string result, string str, int c)
 
 int main()
 {
-    //code;
+    permutations("", "abc", 0);
     return 0;
 }
