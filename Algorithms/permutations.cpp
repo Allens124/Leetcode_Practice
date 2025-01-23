@@ -17,6 +17,7 @@ void permutations(string result, string str, int c)
 {
     if (c == str.length())
     {
+        cout << result << endl;
         return;
     }
     for (int i = 0; i < str.length(); i++)
