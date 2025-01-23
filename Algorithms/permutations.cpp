@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-bool ok(string str, int c)
+bool ok(string result, char next)
 {
-    for (int i = 0; i < c; i++)
+    for (int i = 0; i < result.length(); i++)
     {
-        if (str[c] == str[i])
+        if (result[i] == next)
         {
             return false;
         }
@@ -19,11 +19,11 @@ void permutations(string result, string str, int c)
     {
         return;
     }
-    for (int i = 0; i < str.length()-1; i++)
+    for (int i = 0; i < str.length(); i++)
     {
-        result = result+str[i];
-        if (ok(result, c))
+        if (ok(result, str[i]))
         {
+            result = result+str[i];
             permutations(result, str, c+1);
         }
     }
