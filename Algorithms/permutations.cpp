@@ -13,9 +13,12 @@ bool ok(string str, int c)
     return true;
 }
 
-void permutations(string permArray[], string str, int c)
+void permutations(string str, int c)
 {
-    
+    if (c == str.length())
+    {
+        return;
+    }
 }
 
 int main()
