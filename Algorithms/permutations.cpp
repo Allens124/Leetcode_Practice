@@ -13,11 +13,19 @@ bool ok(string str, int c)
     return true;
 }
 
-void permutations(string str, int c)
+void permutations(string result, string str, int c)
 {
     if (c == str.length())
     {
         return;
+    }
+    for (int i = 0; i < str.length()-1; i++)
+    {
+        result = result+str[i];
+        if (ok(result, c))
+        {
+            permutations(result, str, c+1);
+        }
     }
 }
 
