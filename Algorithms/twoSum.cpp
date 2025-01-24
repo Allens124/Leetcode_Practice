@@ -1,9 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int twoSumZero(int n)
+int twoSumZero(int arr[], int size)
 {
     int i1 = 0, i2 = 0;
+
 }
 
 int main()
