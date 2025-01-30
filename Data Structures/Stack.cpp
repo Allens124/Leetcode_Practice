@@ -20,6 +20,8 @@ class Stack
                 cout << "Stack overflow." << endl;
                 return;
             }
+            top++;
+            arr[top] = data;
         }
 };
 
