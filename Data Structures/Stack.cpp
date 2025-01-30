@@ -13,6 +13,14 @@ class Stack
         {
             top = -1;
         }
+        void push(T data)
+        {
+            if (top == 99)
+            {
+                cout << "Stack overflow." << endl;
+                return;
+            }
+        }
 };
 
 int main()
