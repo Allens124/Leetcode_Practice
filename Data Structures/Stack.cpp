@@ -23,6 +23,10 @@ class Stack
             top++;
             arr[top] = data;
         }
+        void pop()
+        {
+            
+        }
 };
 
 int main()
