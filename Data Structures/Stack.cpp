@@ -25,7 +25,11 @@ class Stack
         }
         void pop()
         {
-            
+            if (top == -1)
+            {
+                cout << "Stack underflow." << endl;
+                return;
+            }
         }
 };
 
