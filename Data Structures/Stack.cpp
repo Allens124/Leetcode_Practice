@@ -23,13 +23,15 @@ class Stack
             top++;
             arr[top] = data;
         }
-        void pop()
+        T pop()
         {
             if (top == -1)
             {
                 cout << "Stack underflow." << endl;
-                return;
+                return T();
             }
+            top--;
+            return arr[top];
         }
 };
 
