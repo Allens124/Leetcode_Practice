@@ -33,6 +33,10 @@ class Stack
             top--;
             return arr[top];
         }
+        bool isFull()
+        {
+            return top == 99;
+        }
 };
 
 int main()
