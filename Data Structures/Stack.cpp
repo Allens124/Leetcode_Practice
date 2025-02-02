@@ -41,6 +41,10 @@ class Stack
         {
             return top == 99;
         }
+        void clear()
+        {
+            top = -1;
+        }
 };
 
 int main()
