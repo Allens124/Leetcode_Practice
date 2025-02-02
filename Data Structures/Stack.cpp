@@ -49,6 +49,6 @@ class Stack
 
 int main()
 {
-    //code;
+    Stack <int> myStack;
     return 0;
 }
