@@ -55,7 +55,7 @@ int main()
     myStack.push(-10);
     while (!myStack.isEmpty())
     {
-        myStack.pop();
+        cout << myStack.pop() << endl;
     }
     return 0;
 }
