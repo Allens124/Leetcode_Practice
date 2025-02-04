@@ -53,5 +53,9 @@ int main()
     myStack.push(5);
     myStack.push(1);
     myStack.push(-10);
+    while (!myStack.isEmpty())
+    {
+        myStack.pop();
+    }
     return 0;
 }
