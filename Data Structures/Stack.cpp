@@ -20,8 +20,7 @@ class Stack
                 cout << "Stack overflow." << endl;
                 return;
             }
-            top++;
-            arr[top] = data;
+            arr[++top] = data;
         }
         T pop()
         {
@@ -30,8 +29,7 @@ class Stack
                 cout << "Stack underflow." << endl;
                 return T();
             }
-            top--;
-            return arr[top];
+            return arr[top--];
         }
         bool isEmpty()
         {
