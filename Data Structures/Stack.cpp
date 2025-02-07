@@ -47,10 +47,10 @@ class Stack
 
 int main()
 {
-    Stack <int> myStack;
-    myStack.push(5);
-    myStack.push(1);
-    myStack.push(-10);
+    Stack <char> myStack;
+    myStack.push('a');
+    myStack.push('b');
+    myStack.push('c');
     while (!myStack.isEmpty())
     {
         cout << myStack.pop() << endl;
