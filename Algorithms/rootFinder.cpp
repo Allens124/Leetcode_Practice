@@ -10,7 +10,7 @@ double F(double x)
 
 double root(double start, double end, FUNC f, double accuracy = 0.01)
 {
-    int guess = (start+end)/2;
+    double guess = (start+end)/2.0;
     if (f(guess) < -accuracy)
     {
         if (f(start) < f(end))
