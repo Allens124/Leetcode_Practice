@@ -3,6 +3,11 @@ using namespace std;
 
 typedef double (*FUNC)(double);
 
+double F(double x)
+{
+    return x*x*x + 2;
+}
+
 double root(double start, double end, FUNC f, double accuracy = 0.01)
 {
     int guess = (start+end)/2;
@@ -27,6 +32,6 @@ double root(double start, double end, FUNC f, double accuracy = 0.01)
 
 int main()
 {
-    //code;
+    cout << root(-2, 0, F) << endl;
     return 0;
 }
