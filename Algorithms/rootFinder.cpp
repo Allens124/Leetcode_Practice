@@ -10,12 +10,12 @@ double F(double x)
 
 double root(double start, double end, FUNC f, double accuracy = 0.01)
 {
-    double guess = (start+end)/2.0;
+    double guess = (start+end)/2;
     if (f(guess) < -accuracy)
     {
         if (f(start) < f(end))
         {
-            cout << guess << endl;
+            cout << f(guess) << endl;
             return root(start, guess, f, accuracy);
         }
         return root(guess, end, f, accuracy);
@@ -24,7 +24,7 @@ double root(double start, double end, FUNC f, double accuracy = 0.01)
     {
         if (f(start) < f(end))
         {
-            cout << guess << endl;
+            cout << f(guess) << endl;
             return root(start, guess, f, accuracy);
         }
         return root(guess, end, f, accuracy);
