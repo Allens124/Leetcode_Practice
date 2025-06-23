@@ -11,6 +11,7 @@ vector <int> continuedFraction(double num)
     {
         return frac;
     }
+    return continuedFraction(1/fracPart);
 }
 
 int main()
