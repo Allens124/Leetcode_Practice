@@ -1,12 +1,13 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
 using namespace std;
 
 void continuedFraction(vector <int> &frac, double num)
 {
     double fracPart = num - (int)num;
     frac.push_back(num - fracPart);
-    if (fracPart < 0.0001 || frac.size() > 10)
+    if (abs(fracPart) < 0.0001 || frac.size() > 10)
     {
         return;
     }
