@@ -19,5 +19,7 @@ int main()
     double num;
     cout << "Enter a rational number: ";
     cin >> num;
+    vector <int> contFrac;
+    contFrac = continuedFraction(num);
     return 0;
 }
