@@ -16,6 +16,8 @@ vector <int> continuedFraction(double num)
 
 int main()
 {
-    //code;
+    double num;
+    cout << "Enter a rational number: ";
+    cin >> num;
     return 0;
 }
