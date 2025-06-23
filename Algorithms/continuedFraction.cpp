@@ -11,7 +11,6 @@ vector <int> continuedFraction(double num)
     {
         return frac;
     }
-    cout << "hi" << endl;
     return continuedFraction(1/fracPart);
 }
 
