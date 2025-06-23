@@ -21,5 +21,10 @@ int main()
     cin >> num;
     vector <int> contFrac;
     contFrac = continuedFraction(num);
+    for (int i = 0; i < contFrac.size(); i++)
+    {
+        cout << contFrac[i] << " ";
+    }
+    cout << endl;
     return 0;
 }
