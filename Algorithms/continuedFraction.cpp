@@ -2,7 +2,10 @@
 #include <vector>
 using namespace std;
 
-
+vector <int> continuedFraction(double num)
+{
+    
+}
 
 int main()
 {
