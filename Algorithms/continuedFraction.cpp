@@ -17,7 +17,7 @@ void continuedFraction(vector <int> &frac, double num)
 int main()
 {
     double num;
-    cout << "Enter a rational number: ";
+    cout << "Enter a decimal number: ";
     cin >> num;
     vector <int> contFrac;
     continuedFraction(contFrac, num);
