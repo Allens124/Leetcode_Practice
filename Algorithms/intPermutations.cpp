@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-void permute (int size)
+void permute (vector <vector <int>>)
 {
 
 }
@@ -17,6 +17,7 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> size;
     }
-    vector <vector <int>> permutations = permute(size);
+    vector <vector <int>> permutations;
+    permute(permutations);
     return 0;
 }
