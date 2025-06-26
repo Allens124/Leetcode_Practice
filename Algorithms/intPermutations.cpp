@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-vector <vector <int>> permute (int size)
+void permute (int size)
 {
 
 }
