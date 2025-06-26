@@ -17,5 +17,6 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> size;
     }
+    vector <vector <int>> permutations = permute(size);
     return 0;
 }
