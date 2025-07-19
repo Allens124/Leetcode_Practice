@@ -2,9 +2,9 @@
 #include <vector>
 using namespace std;
 
-void permute (vector <vector <int>>)
+void permute (vector <vector <int>> permutations, int size)
 {
-
+    //code;
 }
 
 int main()
@@ -18,6 +18,6 @@ int main()
         cin >> size;
     }
     vector <vector <int>> permutations;
-    permute(permutations);
+    permute(permutations, size);
     return 0;
 }
