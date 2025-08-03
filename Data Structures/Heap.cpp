@@ -90,7 +90,7 @@ class Heap
             {
                 return;
             }
-            if (dl < dr)
+            if (dl <= dr)
             {
                 swapData(n, 2*n+1);
                 bubbleDown(2*n+1);
