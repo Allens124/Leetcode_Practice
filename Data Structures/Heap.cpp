@@ -37,6 +37,14 @@ class Heap
             bubbleDown(0);
             return ans;
         }
+        int size()
+        {
+            return size;
+        }
+        bool isEmpty()
+        {
+            return size == 0;
+        }
     private:
         void swapData(int n, int m)
         {
@@ -90,6 +98,17 @@ class Heap
 
 int main()
 {
-    //code;
+    Heap<int> myHeap = Heap<int>();
+    myHeap.add(3);
+    myHeap.add(1);
+    myHeap.add(4);
+    myHeap.add(5);
+    myHeap.add(9);
+    myHeap.add(2);
+    myHeap.add(6);
+    myHeap.add(8);
+    myHeap.add(7);
+    myHeap.add(0);
+    for (int i = 0; i < )
     return 0;
 }
