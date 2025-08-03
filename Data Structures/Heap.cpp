@@ -13,6 +13,17 @@ class Heap
         {
             size = 0;
         }
+        void add(T d)
+        {
+            if (size == 1000)
+            {
+                cout << "Heap is full." << endl;
+                return;
+            }
+            T[size] = d;
+            bubbleUp(size);
+            size++;
+        }
 };
 
 int main()
