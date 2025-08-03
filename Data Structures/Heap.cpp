@@ -47,7 +47,7 @@ class Heap
         }
         void printHeap()
         {
-            for (T d : data)
+            for (int i = 0; i < size; i++)
             {
                 cout << d << endl;
             }
@@ -116,9 +116,6 @@ int main()
     myHeap.add(8);
     myHeap.add(7);
     myHeap.add(0);
-    for (int i = 0; i < 11; i++)
-    {
-        cout << myHeap.removeMin() << endl;
-    }
+    myHeap.printHeap();
     return 0;
 }
