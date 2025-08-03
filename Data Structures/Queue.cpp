@@ -31,6 +31,21 @@ class Queue
             }
             data[rear] = d;
         }
+        T pop()
+        {
+            if (size == 0)
+            {
+                cout << "Queue underflow." << endl;
+                return T();
+            }
+            T ans = data[front];
+            front++;
+            if (front == 1000)
+            {
+                front = 0;
+            }
+            return ans;
+        }
 };
 
 int main()
