@@ -31,17 +31,13 @@ class Stack
             }
             return arr[top--];
         }
+        int getSize()
+        {
+            return top+1;
+        }
         bool isEmpty()
         {
             return top == -1;
-        }
-        bool isFull()
-        {
-            return top == 99;
-        }
-        void clear()
-        {
-            top = -1;
         }
 };
 
