@@ -106,7 +106,7 @@ class Heap
 int main()
 {
     int size, input;
-    cout << "Enter the number of elements to push to a queue: ";
+    cout << "Enter the number of elements to push to a heap: ";
     cin >> size;
     while (size < 1)
     {
@@ -114,7 +114,7 @@ int main()
         cin >> size;
     }
     Heap<int> myQueue = Heap<int>();
-    cout << "Enter values into the queue: ";
+    cout << "Enter values into the heap: ";
     for (int i = 0; i < size; i++)
     {
         cin >> input;
