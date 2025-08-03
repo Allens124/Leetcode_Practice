@@ -53,6 +53,27 @@ class Stack
 
 int main()
 {
-    //code;
+    int size, input;
+    cout << "Enter the number of elements to push to a stack: ";
+    cin >> size;
+    while (size < 1)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> size;
+    }
+    Stack<int> myStack = Stack<int>();
+    cout << "Enter values into the stack: ";
+    for (int i = 0; i < size; i++)
+    {
+        cin >> input;
+        myStack.push(input);
+    }
+    cout << "Before pop(): " << endl;
+    myStack.print();
+    cout << "After pop(): " << endl;
+    while (!myStack.isEmpty())
+    {
+        cout << myStack.pop() << endl;
+    }
     return 0;
 }

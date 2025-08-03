@@ -105,6 +105,27 @@ class Heap
 
 int main()
 {
-    //code;
+    int size, input;
+    cout << "Enter the number of elements to push to a queue: ";
+    cin >> size;
+    while (size < 1)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> size;
+    }
+    Heap<int> myQueue = Heap<int>();
+    cout << "Enter values into the queue: ";
+    for (int i = 0; i < size; i++)
+    {
+        cin >> input;
+        myQueue.add(input);
+    }
+    cout << "Before removeMin(): " << endl;
+    myQueue.print();
+    cout << "After removeMin(): " << endl;
+    while (!myQueue.isEmpty())
+    {
+        cout << myQueue.removeMin() << endl;
+    }
     return 0;
 }
