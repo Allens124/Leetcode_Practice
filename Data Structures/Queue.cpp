@@ -17,6 +17,20 @@ class Queue
             rear = -1;
             size = 0;
         }
+        void push(T d)
+        {
+            if (size == 1000)
+            {
+                cout << "Queue overflow." << endl;
+                return;
+            }
+            rear++;
+            if (rear == 1000)
+            {
+                rear = 0;
+            }
+            data[rear] = d;
+        }
 };
 
 int main()
