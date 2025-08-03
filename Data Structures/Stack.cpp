@@ -13,14 +13,15 @@ class Stack
         {
             top = -1;
         }
-        void push(T data)
+        void push(T d)
         {
             if (top == 99)
             {
                 cout << "Stack overflow." << endl;
                 return;
             }
-            arr[++top] = data;
+            top++;
+            data[top] = d;
         }
         T pop()
         {
@@ -29,7 +30,9 @@ class Stack
                 cout << "Stack underflow." << endl;
                 return T();
             }
-            return arr[top--];
+            T ans = data[top];
+            top--;
+            return ans;
         }
         int getSize()
         {
