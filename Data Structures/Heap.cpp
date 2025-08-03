@@ -37,7 +37,7 @@ class Heap
             bubbleDown(0);
             return ans;
         }
-        int size()
+        int getSize()
         {
             return size;
         }
