@@ -42,6 +42,13 @@ class Stack
         {
             return top == -1;
         }
+        void printStack()
+        {
+            for (int i = top; i > -1; i--)
+            {
+                cout << data[i] << endl;
+            }
+        }
 };
 
 int main()
