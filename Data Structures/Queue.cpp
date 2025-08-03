@@ -46,6 +46,17 @@ class Queue
             }
             return ans;
         }
+        void print()
+        {
+            for (int i = front; i != rear; i++)
+            {
+                if (i == 1000)
+                {
+                    i = 0;
+                }
+                cout << data[i] << endl;
+            }
+        }
 };
 
 int main()
