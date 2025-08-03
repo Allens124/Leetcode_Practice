@@ -56,7 +56,7 @@ class Queue
         }
         void print()
         {
-            for (int i = front; i != rear; i++)
+            for (int i = front; i != rear+1; i++)
             {
                 if (i == 1000)
                 {
