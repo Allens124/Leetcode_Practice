@@ -6,7 +6,8 @@ template <typename T>
 class Heap
 {
     private:
-        int 
+        T data[1000];
+        int size;
 };
 
 int main()
