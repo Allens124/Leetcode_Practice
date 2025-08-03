@@ -6,8 +6,8 @@ template <typename T>
 class Stack
 {
     private:
+        T data[1000];
         int top;
-        T arr[100];
     public:
         Stack()
         {
