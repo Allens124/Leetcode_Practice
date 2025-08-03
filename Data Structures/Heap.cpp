@@ -119,7 +119,8 @@ int main()
     while (!myHeap.isEmpty())
     {
         myHeap.printHeap();
-        cout << "Minimum element: << " << myHeap.removeMin() << endl;
+        cout << "Current size: " << myHeap.getSize() << endl;
+        cout << "Minimum element: " << myHeap.removeMin() << endl;
     }
     return 0;
 }
