@@ -116,6 +116,10 @@ int main()
     myHeap.add(8);
     myHeap.add(7);
     myHeap.add(0);
-    myHeap.printHeap();
+    while (!myHeap.isEmpty())
+    {
+        myHeap.printHeap();
+        cout << "Minimum element: << " << myHeap.removeMin() << endl;
+    }
     return 0;
 }
