@@ -53,13 +53,6 @@ class Stack
 
 int main()
 {
-    Stack <char> myStack;
-    myStack.push('a');
-    myStack.push('b');
-    myStack.push('c');
-    while (!myStack.isEmpty())
-    {
-        cout << myStack.pop() << endl;
-    }
+    //code;
     return 0;
 }

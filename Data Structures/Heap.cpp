@@ -105,22 +105,6 @@ class Heap
 
 int main()
 {
-    Heap<int> myHeap = Heap<int>();
-    myHeap.add(3);
-    myHeap.add(1);
-    myHeap.add(4);
-    myHeap.add(5);
-    myHeap.add(9);
-    myHeap.add(2);
-    myHeap.add(6);
-    myHeap.add(8);
-    myHeap.add(7);
-    myHeap.add(0);
-    while (!myHeap.isEmpty())
-    {
-        myHeap.print();
-        cout << "Current size: " << myHeap.getSize() << endl;
-        cout << "Minimum element: " << myHeap.removeMin() << endl;
-    }
+    //code;
     return 0;
 }
