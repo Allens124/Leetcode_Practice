@@ -45,7 +45,7 @@ class Heap
         {
             return size == 0;
         }
-        void printHeap()
+        void print()
         {
             for (int i = 0; i < size; i++)
             {
@@ -118,7 +118,7 @@ int main()
     myHeap.add(0);
     while (!myHeap.isEmpty())
     {
-        myHeap.printHeap();
+        myHeap.print();
         cout << "Current size: " << myHeap.getSize() << endl;
         cout << "Minimum element: " << myHeap.removeMin() << endl;
     }
