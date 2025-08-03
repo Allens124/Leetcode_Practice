@@ -10,6 +10,13 @@ class Queue
         int front;
         int rear;
         int size;
+    public:
+        Queue()
+        {
+            front = 0;
+            rear = -1;
+            size = 0;
+        }
 };
 
 int main()
