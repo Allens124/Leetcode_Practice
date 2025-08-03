@@ -109,6 +109,9 @@ int main()
     myHeap.add(8);
     myHeap.add(7);
     myHeap.add(0);
-    for (int i = 0; i < )
+    while (!myHeap.isEmpty())
+    {
+        cout << myHeap.removeMin() << endl;
+    }
     return 0;
 }
