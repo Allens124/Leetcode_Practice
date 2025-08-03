@@ -20,7 +20,7 @@ class Heap
                 cout << "Heap is full." << endl;
                 return;
             }
-            T[size] = d;
+            data[size] = d;
             bubbleUp(size);
             size++;
         }
