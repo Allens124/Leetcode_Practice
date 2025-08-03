@@ -42,7 +42,7 @@ class Stack
         {
             return top == -1;
         }
-        void printStack()
+        void print()
         {
             for (int i = top; i > -1; i--)
             {
