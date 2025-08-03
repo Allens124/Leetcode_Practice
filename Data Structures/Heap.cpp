@@ -44,6 +44,20 @@ class Heap
             data[n] = data[m];
             data[m] = temp;
         }
+        void bubbleUp(int n)
+        {
+            if (n == 0)
+            {
+                return;
+            }
+            T dn = data[n];
+            T dp = data[(n-1)/2];
+            if (dn < dp)
+            {
+                swapData(n, (n-1)/2);
+                bubbleUp((n-1)/2);
+            }
+        }
 };
 
 int main()
