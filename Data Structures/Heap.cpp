@@ -45,6 +45,13 @@ class Heap
         {
             return size == 0;
         }
+        void printHeap()
+        {
+            for (T d : data)
+            {
+                cout << d << endl;
+            }
+        }
     private:
         void swapData(int n, int m)
         {
@@ -109,7 +116,7 @@ int main()
     myHeap.add(8);
     myHeap.add(7);
     myHeap.add(0);
-    while (!myHeap.isEmpty())
+    for (int i = 0; i < 11; i++)
     {
         cout << myHeap.removeMin() << endl;
     }
