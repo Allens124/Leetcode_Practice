@@ -37,6 +37,13 @@ class Heap
             bubbleDown(0);
             return ans;
         }
+    private:
+        void swapData(int n, int m)
+        {
+            T temp = data[n];
+            data[n] = data[m];
+            data[m] = temp;
+        }
 };
 
 int main()
