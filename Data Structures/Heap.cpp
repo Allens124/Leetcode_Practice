@@ -24,6 +24,19 @@ class Heap
             bubbleUp(size);
             size++;
         }
+        T removeMin()
+        {
+            if (size == 0)
+            {
+                cout << "Heap is empty. Default return." << endl;
+                return data[0];
+            }
+            size--;
+            T ans = data[0];
+            swapData(0, size);
+            bubbleDown(0);
+            return ans;
+        }
 };
 
 int main()
