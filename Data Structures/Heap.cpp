@@ -28,8 +28,8 @@ class Heap
         {
             if (size == 0)
             {
-                cout << "Heap is empty. Default return." << endl;
-                return data[0];
+                cout << "Heap is empty." << endl;
+                return T();
             }
             size--;
             T ans = data[0];
