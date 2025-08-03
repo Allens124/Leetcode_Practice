@@ -58,6 +58,34 @@ class Heap
                 bubbleUp((n-1)/2);
             }
         }
+        void bubbleDown(int n)
+        {
+            if (2*n+1 >= size)
+            {
+                return;
+            }
+            T dn = data[n];
+            T dl = data[2*n+1];
+            T dr = dl;
+            if (2*n+2 < size)
+            {
+                dr = data[2*n+2];
+            }
+            if (dn < dl && dn < dr)
+            {
+                return;
+            }
+            if (dl < dr)
+            {
+                swapData(n, 2*n+1);
+                bubbleDown(2*n+1);
+            }
+            else
+            {
+                swapData(n, 2*n+2);
+                bubbleDown(2*n+2);
+            }
+        }
 };
 
 int main()
