@@ -1,23 +1,21 @@
 #include <iostream>
 using namespace std;
 
-template <typename T>
-
-void swapData(T heap[], int i, int j)
+void swapData(int heap[], int i, int j)
 {
-    T temp = heap[i];
+    int temp = heap[i];
     heap[i] = heap[j];
     heap[j] = temp;
 }
 
-void bubbleUp(T heap[], int i)
+void bubbleUp(int heap[], int i)
 {
     if (i == 0)
     {
         return;
     }
-    T dn = heap[i];
-    T dp = heap[(i-1)/2];
+    int dn = heap[i];
+    int dp = heap[(i-1)/2];
     if (dp < dn)
     {
         swapData(heap, i, (i-1)/2);
@@ -25,15 +23,15 @@ void bubbleUp(T heap[], int i)
     }
 }
 
-void bubbleDown(T heap[], int i, int size)
+void bubbleDown(int heap[], int i, int size)
 {
     if (2*i+1 >= size)
     {
         return;
     }
-    T dn = heap[i];
-    T dl = heap[2*i+1];
-    T dr = dl;
+    int dn = heap[i];
+    int dl = heap[2*i+1];
+    int dr = dl;
     if (2*i+2 < size)
     {
         dr = heap[2*i+2];
@@ -44,19 +42,19 @@ void bubbleDown(T heap[], int i, int size)
     }
     if (dl <= dr)
     {
-        swapData(i, 2*i+1);
-        bubbleDown(2*i+1);
+        swapData(heap, i, 2*i+1);
+        bubbleDown(heap, 2*i+1, size);
     }
     else
     {
-        swapData(i, 2*i+2);
-        bubbleDown(2*i+2);
+        swapData(heap, i, 2*i+2);
+        bubbleDown(heap, 2*i+2, size);
     }
 }
 
-void heapSort(T array[], int size)
+void heapSort(int array[], int size)
 {
-    T heap[size];
+    int heap[size];
     for (int i = 0; i < size; i++)
     {
         heap[i] = array[i];
@@ -70,7 +68,7 @@ void heapSort(T array[], int size)
     }
 }
 
-void print(T array[], int size)
+void print(int array[], int size)
 {
     for (int i = 0; i < size; i++)
     {
@@ -81,6 +79,9 @@ void print(T array[], int size)
 
 int main()
 {
-    //code;
+    int arr[10] = {4, 2, 6, 7, 1, 3, 5, 9, 0, 8};
+    print(arr, 10);
+    heapSort(arr, 10);
+    print(arr, 10);
     return 0;
 }
