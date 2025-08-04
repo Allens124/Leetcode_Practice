@@ -16,7 +16,7 @@ void bubbleUp(int heap[], int i)
     }
     int dn = heap[i];
     int dp = heap[(i-1)/2];
-    if (dp < dn)
+    if (dn < dp)
     {
         swapData(heap, i, (i-1)/2);
         bubbleUp(heap, (i-1)/2);
@@ -58,13 +58,13 @@ void heapSort(int array[], int size)
     for (int i = 0; i < size; i++)
     {
         heap[i] = array[i];
-        bubbleUp(array, i);
+        bubbleUp(heap, i);
     }
     for (int i = 0; i < size; i++)
     {
         array[i] = heap[0];
         swapData(heap, 0, size-1-i);
-        bubbleDown(heap, 0, i+1);
+        bubbleDown(heap, 0, size-1-i);
     }
 }
 
