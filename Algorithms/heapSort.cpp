@@ -70,6 +70,15 @@ void heapSort(T array[], int size)
     }
 }
 
+void print(T array[], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        cout << array[i] << " ";
+    }
+    cout << endl;
+}
+
 int main()
 {
     //code;
