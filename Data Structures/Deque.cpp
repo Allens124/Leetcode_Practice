@@ -97,6 +97,27 @@ class Deque
 
 int main()
 {
-    //code;
+    int size, input;
+    cout << "Enter the number of elements to push to the front of a deque: ";
+    cin >> size;
+    while (size < 1)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> size;
+    }
+    Deque<int> myDeque = Deque<int>();
+    cout << "Enter values into the deque: ";
+    for (int i = 0; i < size; i++)
+    {
+        cin >> input;
+        myDeque.push_front(input);
+    }
+    cout << "Before pop_rear(): " << endl;
+    myDeque.print();
+    cout << "After pop_rear(): " << endl;
+    while (!myDeque.isEmpty())
+    {
+        cout << myDeque.pop_front() << endl;
+    }
     return 0;
 }
