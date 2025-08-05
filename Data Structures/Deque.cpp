@@ -116,12 +116,12 @@ int main()
         cin >> input;
         myDeque.push_front(input);
     }
-    cout << "Before pop_rear(): " << endl;
+    cout << "Before pop_back(): " << endl;
     myDeque.print();
-    cout << "After pop_rear(): " << endl;
+    cout << "After pop_back(): " << endl;
     while (!myDeque.isEmpty())
     {
-        cout << myDeque.pop_front() << endl;
+        cout << myDeque.pop_back() << endl;
     }
     return 0;
 }
