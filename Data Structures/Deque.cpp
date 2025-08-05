@@ -30,6 +30,7 @@ class Deque
             {
                 front = 999;
             }
+            size++;
         }
         T pop_front()
         {
@@ -43,6 +44,7 @@ class Deque
             {
                 front = 0;
             }
+            size--;
             return data[front];
         }
         void push_back(T d)
@@ -58,6 +60,7 @@ class Deque
                 rear = 0;
             }
             data[rear] = d;
+            size++;
         }
         T pop_back()
         {
@@ -72,6 +75,7 @@ class Deque
             {
                 rear = 999;
             }
+            size--;
             return ans;
         }
 };
