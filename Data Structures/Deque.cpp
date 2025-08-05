@@ -90,6 +90,10 @@ class Deque
         {
             for (int i = (front+1)%1000; i != rear+1; i++)
             {
+                if (i == 1000)
+                {
+                    i = 0;
+                }
                 cout << data[i] << endl;
             }
         }
