@@ -33,7 +33,17 @@ class Deque
         }
         T pop_front()
         {
-            
+            if (size == 0)
+            {
+                cout << "Deque underflow." << endl;
+                return T();
+            }
+            front++;
+            if (front == 1000)
+            {
+                front = 0;
+            }
+            return data[front];
         }
         void push_back(T d)
         {
@@ -51,7 +61,18 @@ class Deque
         }
         T pop_back()
         {
-
+            if (size == 0)
+            {
+                cout << "Deque underflow." << endl;
+                return T();
+            }
+            T ans = data[rear];
+            rear--;
+            if (rear == -1)
+            {
+                rear = 999;
+            }
+            return ans;
         }
 };
 
