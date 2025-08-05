@@ -78,6 +78,14 @@ class Deque
             size--;
             return ans;
         }
+        int getSize()
+        {
+            return size;
+        }
+        bool isEmpty()
+        {
+            return size == 0;
+        }
 };
 
 int main()
