@@ -86,6 +86,13 @@ class Deque
         {
             return size == 0;
         }
+        void print()
+        {
+            for (int i = (front+1)%1000; i != rear+1; i++)
+            {
+                cout << data[i] << endl;
+            }
+        }
 };
 
 int main()
