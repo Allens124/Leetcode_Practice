@@ -10,6 +10,13 @@ class Deque
         int front;
         int rear;
         int size;
+    public:
+        Deque()
+        {
+            front = 0;
+            rear = 0;
+            size = 0;
+        }
 };
 
 int main()
