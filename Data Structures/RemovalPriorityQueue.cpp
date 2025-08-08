@@ -23,9 +23,9 @@ class PriorityQueue
                 return;
             }
             int i = size;
-            while (data[i-1] < d)
+            while (i > 0 && data[i-1] < d)
             {
-                data[i-1] = data[i];
+                data[i] = data[i-1];
                 i--;
             }
             data[i] = d;
