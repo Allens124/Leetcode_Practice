@@ -33,7 +33,7 @@ class PriorityQueue
             int min = 0;
             for (int i = 1; i < size; i++)
             {
-                if (data[min] < data[i])
+                if (data[min] > data[i])
                 {
                     min = i;
                 }
@@ -51,10 +51,38 @@ class PriorityQueue
         {
             return size == 0;
         }
+        void print()
+        {
+            for (int i = 0; i < size; i++)
+            {
+                cout << data[i] << endl;
+            }
+        }
 };
 
 int main()
 {
-    //code;
+    int size, input;
+    cout << "Enter the number of elements to push to a heap: ";
+    cin >> size;
+    while (size < 1)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> size;
+    }
+    PriorityQueue<int> myQueue = PriorityQueue<int>();
+    cout << "Enter values into the heap: ";
+    for (int i = 0; i < size; i++)
+    {
+        cin >> input;
+        myQueue.add(input);
+    }
+    cout << "Before removeMin(): " << endl;
+    myQueue.print();
+    cout << "After removeMin(): " << endl;
+    while (!myQueue.isEmpty())
+    {
+        cout << myQueue.removeMin() << endl;
+    }
     return 0;
 }
