@@ -16,14 +16,17 @@ class PriorityQueue
                 cout << "Queue overflow." << endl;
                 return;
             }
-            int i = size;
-            while (i > 0)
+            if (size == 0)
             {
-                if (data[i-1] < d)
-                {
-                    data[i-1] = data[i];
-                    i--;
-                }
+                data[size] = d;
+                size++;
+                return;
+            }
+            int i = size;
+            while (data[i-1] < d)
+            {
+                data[i-1] = data[i];
+                i--;
             }
             data[i] = d;
             size++;
