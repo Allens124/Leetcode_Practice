@@ -38,6 +38,21 @@ class PriorityQueue
             T size--;
             return data[size];
         }
+        int getSize()
+        {
+            return size;
+        }
+        void isEmpty()
+        {
+            return size == 0;
+        }
+        void print()
+        {
+            for (int i = 0; i < size; i++)
+            {
+                cout << data[i] << endl;
+            }
+        }
 };
 
 int main()
