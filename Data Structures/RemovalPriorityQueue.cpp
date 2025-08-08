@@ -35,7 +35,7 @@ class PriorityQueue
                 cout << "Queue underflow." << endl;
                 return T();
             }
-            T size--;
+            size--;
             return data[size];
         }
         int getSize()
