@@ -43,6 +43,14 @@ class PriorityQueue
             data[min] = data[size];
             return temp;
         }
+        int getSize()
+        {
+            return size;
+        }
+        bool isEmpty()
+        {
+            return size == 0;
+        }
 };
 
 int main()
