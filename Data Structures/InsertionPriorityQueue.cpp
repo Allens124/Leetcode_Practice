@@ -23,6 +23,26 @@ class PriorityQueue
             data[size] = d;
             size++;
         }
+        T removeMin()
+        {
+            if (size == 0)
+            {
+                cout << "Queue underflow." << endl;
+                return T();
+            }
+            int min = 0;
+            for (int i = 1; i < size; i++)
+            {
+                if (data[min] < data[i])
+                {
+                    min = i;
+                }
+            }
+            size--;
+            T temp = data[min];
+            data[min] = data[size];
+            return temp;
+        }
 };
 
 int main()
