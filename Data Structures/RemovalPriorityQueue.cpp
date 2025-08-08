@@ -9,6 +9,25 @@ class PriorityQueue
         T data[1000];
         int size;
     public:
+        void add(T d)
+        {
+            if (size == 1000)
+            {
+                cout << "Queue overflow." << endl;
+                return;
+            }
+            int i = size;
+            while (i > 0)
+            {
+                if (data[i-1] < d)
+                {
+                    data[i-1] = data[i];
+                    i--;
+                }
+            }
+            data[i] = d;
+            size++;
+        }
         T removeMin()
         {
             if (size == 0)
