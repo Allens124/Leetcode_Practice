@@ -42,7 +42,7 @@ class PriorityQueue
         {
             return size;
         }
-        void isEmpty()
+        bool isEmpty()
         {
             return size == 0;
         }
@@ -57,6 +57,27 @@ class PriorityQueue
 
 int main()
 {
-    //code;
+    int size, input;
+    cout << "Enter the number of elements to push to a heap: ";
+    cin >> size;
+    while (size < 1)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> size;
+    }
+    PriorityQueue<int> myQueue = PriorityQueue<int>();
+    cout << "Enter values into the heap: ";
+    for (int i = 0; i < size; i++)
+    {
+        cin >> input;
+        myQueue.add(input);
+    }
+    cout << "Before removeMin(): " << endl;
+    myQueue.print();
+    cout << "After removeMin(): " << endl;
+    while (!myQueue.isEmpty())
+    {
+        cout << myQueue.removeMin() << endl;
+    }
     return 0;
 }
