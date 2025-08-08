@@ -13,6 +13,16 @@ class PriorityQueue
         {
             size = 0;
         }
+        void add(T d)
+        {
+            if (size == 1000)
+            {
+                cout << "Queue overflow." << endl;
+                return;
+            }
+            data[size] = d;
+            size++;
+        }
 };
 
 int main()
