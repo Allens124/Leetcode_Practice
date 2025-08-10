@@ -32,6 +32,11 @@ class Node
         }
 };
 
+class LinkedList
+{
+
+};
+
 int main()
 {
     //code;
