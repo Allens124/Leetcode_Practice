@@ -38,6 +38,11 @@ class LinkedList
         Node* head;
         Node* tail;
         int size;
+    public:
+        LinkedList()
+        {
+            size = 0;
+        }
 };
 
 int main()
