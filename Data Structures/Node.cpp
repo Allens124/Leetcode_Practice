@@ -39,5 +39,9 @@ int main()
     Node<int> c = Node<int>(4, &d);
     Node<int> b = Node<int>(1, &c);
     Node<int> a = Node<int>(3, &b);
+
+    Node<int> current = a;
+    cout << current.getData() << endl;
+    cout << current.getNext() << endl;
     return 0;
 }
