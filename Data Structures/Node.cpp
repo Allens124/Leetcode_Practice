@@ -7,9 +7,9 @@ class Node
 {
     private:
         T data;
-        Node next;
+        Node<T> next;
     public:
-        Node(T d, Node n)
+        Node(T d, Node<T> n)
         {
             data = d;
             next = n;
@@ -22,11 +22,11 @@ class Node
         {
             return data;
         }
-        void setNext(Node n)
+        void setNext(Node<T> n)
         {
             next = n;
         }
-        Node getNext()
+        Node<T> getNext()
         {
             return next;
         }
@@ -34,6 +34,6 @@ class Node
 
 int main()
 {
-    //code;
+    Node<int> n = Node<int>(1, NULL);
     return 0;
 }
