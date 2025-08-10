@@ -34,6 +34,10 @@ class Node
 
 int main()
 {
-    Node<int> n = Node<int>(1, nullptr);
+    Node<int> e = Node<int>(5, nullptr);
+    Node<int> d = Node<int>(1, &e);
+    Node<int> c = Node<int>(4, &d);
+    Node<int> b = Node<int>(1, &c);
+    Node<int> a = Node<int>(3, &b);
     return 0;
 }
