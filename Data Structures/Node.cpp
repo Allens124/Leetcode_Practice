@@ -40,8 +40,12 @@ int main()
     Node<int> b = Node<int>(1, &c);
     Node<int> a = Node<int>(3, &b);
 
-    Node<int> current = e;
-    cout << current.getData() << endl;
-    cout << current.getNext() << endl;
+    Node<int>* current = &a;
+    while (current != nullptr)
+    {
+        cout << current->getData() << " ";
+        current = current->getNext();
+    }
+    cout << endl;
     return 0;
 }
