@@ -14,6 +14,14 @@ class Node
             data = d;
             next = n;
         }
+        void setData(T d)
+        {
+            data = d;
+        }
+        T getData()
+        {
+            return data;
+        }
 };
 
 int main()
