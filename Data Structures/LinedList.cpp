@@ -22,6 +22,14 @@ class Node
         {
             return data;
         }
+        void setNext(Node n)
+        {
+            next = n;
+        }
+        Node getNext()
+        {
+            return next;
+        }
 };
 
 int main()
