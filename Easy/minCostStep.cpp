@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-int minCostStep(vector<int> cost)
+int minCostClimbingStairs(vector<int> cost)
 {
     int size = cost.size();
     vector<int> opt(size, 0);
@@ -22,7 +22,7 @@ int main()
 {
     vector<int> example1 = {10, 15, 20};
     vector<int> example2 = {1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
-    cout << minCostStep(example1) << endl;
-    cout << minCostStep(example2) << endl;
+    cout << minCostClimbingStairs(example1) << endl;
+    cout << minCostClimbingStairs(example2) << endl;
     return 0;
 }
