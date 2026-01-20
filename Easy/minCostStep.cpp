@@ -11,6 +11,11 @@ int minCostStep(vector<int> cost)
     {
         opt[1] = min(cost[0], cost[1]);
     }
+    for (int j = 2; j < size; j++)
+    {
+        opt[j] = min(cost[j-1] + opt[j-2], min(cost[j-1] + opt[j-1], cost[j] + opt[j-1]));
+    }
+    return opt[size-1];
 }
 
 int main()
