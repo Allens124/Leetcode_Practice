@@ -20,6 +20,9 @@ int minCostStep(vector<int> cost)
 
 int main()
 {
-    //code;
+    vector<int> example1 = {10, 15, 20};
+    vector<int> example2 = {1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
+    cout << minCostStep(example1) << endl;
+    cout << minCostStep(example2) << endl;
     return 0;
 }
