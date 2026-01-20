@@ -5,6 +5,8 @@ using namespace std;
 
 int minCostStep(vector<int> cost)
 {
+    int size = cost.size();
+    int opt[size] = {0};
     
 }
 
