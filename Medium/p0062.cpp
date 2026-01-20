@@ -8,9 +8,12 @@ int uniquePaths(int m, int n)
     {
         return 1;
     }
-    memo[m-1][n] = uniquePaths(m-1, n);
-    memo[m][n-1] = uniquePaths(m, n-1);
-    return memo[m-1][n] + memo[m][n-1];
+    if (memo[m][n] != 0)
+    {
+        return memo[m][n];
+    }
+    memo[m][n] = uniquePaths(m-1, n) + uniquePaths(m, n-1);
+    return memo[m][n];
 }
 
 int main()
