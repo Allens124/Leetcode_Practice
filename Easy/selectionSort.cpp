@@ -22,6 +22,32 @@ void selectionSort(int A[], int n)
 
 int main()
 {
-    //code;
+    int n;
+    cout << "Enter a positive integer: ";
+    cin >> n;
+    while (n < 1)
+    {
+        cout << "Invalid input. Try again: ";
+        cin >> n;
+    }
+    int arr[n];
+    cout << "Enter " << n << " integers: ";
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    cout << "Before sorting: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+    selectionSort(arr, n);
+    cout << "After sorting: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
     return 0;
 }
