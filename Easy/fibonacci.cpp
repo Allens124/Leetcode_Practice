@@ -19,6 +19,14 @@ int fibonacci(int n)
 
 int main()
 {
-    //code;
+    int n;
+    cout << "Enter a non-negative integer: ";
+    cin >> n;
+    while (n < 0)
+    {
+        cout << "Invalid input! Try again: ";
+        cin >> n;
+    }
+    cout << "Term " << n << " in the Fibonacci sequence is: " << fib(n) << endl;
     return 0;
 }
