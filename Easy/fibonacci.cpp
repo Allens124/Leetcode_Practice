@@ -27,6 +27,6 @@ int main()
         cout << "Invalid input! Try again: ";
         cin >> n;
     }
-    cout << "Term " << n << " in the Fibonacci sequence is: " << fib(n) << endl;
+    cout << "Term " << n << " in the Fibonacci sequence is: " << fibonacci(n) << endl;
     return 0;
 }
